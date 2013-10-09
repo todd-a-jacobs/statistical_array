@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative File.join '..', 'lib', 'statistical_array'
+
+unless ARGV.size >= 1
+  puts "Usage: #{File.basename $0} <number ...>"
+  exit 64
+end
+
+include StatisticalArray
+a = StatsArray.new ARGV.map { |i| i.include?('.') ? i.to_f : i.to_i }
+a.print
