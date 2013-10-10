@@ -1,4 +1,4 @@
-# statistical_array
+# Statistical Array
 
 ## Copyright and Licensing
 
